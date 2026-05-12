@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIエージェント導入やコンサルティングのお問い合わせはこちら">
+    <title>お問い合わせ - AI Agent Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         ============================================================ -->
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html" class="logo-link">AI Agent Lab</a></div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">TOPページ</a>
+                <a href="concept.html" class="nav-link">コンセプト</a>
+                <a href="blog-index.html" class="nav-link">ブログ</a>
+                <a href="index.html#cta" class="nav-link">特典受取</a>
+                <a href="contact.html" class="nav-link">問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         PAGE HEADER
+         ============================================================ -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">お問い合わせ</h1>
+            <p class="page-description">
+                AIエージェントの導入、法人向けコンサルティング、取材等のご依頼はこちらからお願いいたします。内容を確認次第、担当者よりご連絡させていただきます。
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT FORM SECTION
+         ============================================================ -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <form class="contact-form" method="POST" action="#">
+                    <!-- Company Name (Optional) -->
+                    <div class="form-group">
+                        <label for="company" class="form-label">会社名（任意）</label>
+                        <input type="text" id="company" name="company" class="form-input" placeholder="例：株式会社○○">
+                    </div>
+
+                    <!-- Name (Required) -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">お名前（必須）<span class="form-required">*</span></label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="例：山田太郎" required>
+                    </div>
+
+                    <!-- Email (Required) -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">メールアドレス（必須）<span class="form-required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="例：info@example.com" required>
+                    </div>
+
+                    <!-- Inquiry Type (Required) -->
+                    <div class="form-group">
+                        <label for="inquiry-type" class="form-label">お問い合わせ種別（必須）<span class="form-required">*</span></label>
+                        <select id="inquiry-type" name="inquiry-type" class="form-select" required>
+                            <option value="">選択してください</option>
+                            <option value="consulting">コンサルティングのご相談</option>
+                            <option value="media">取材・講演のご依頼</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <!-- Message (Required) -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">お問い合わせ内容（必須）<span class="form-required">*</span></label>
+                        <textarea id="message" name="message" class="form-textarea" rows="8" placeholder="具体的なご相談内容をお聞かせください。" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group form-group-submit">
+                        <button type="submit" class="btn btn-contact">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AI Agent Lab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

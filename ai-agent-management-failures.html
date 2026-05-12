@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIエージェント実験ログ：詳細記事">
+    <title>【実録】AIエージェントにWeb制作を丸投げして起きた「3つの悲劇」と、真のAIマネジメント - AI Agent Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         ============================================================ -->
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html" class="logo-link">AI Agent Lab</a></div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">TOPページ</a>
+                <a href="concept.html" class="nav-link">コンセプト</a>
+                <a href="blog-index.html" class="nav-link">ブログ</a>
+                <a href="index.html#cta" class="nav-link">特典受取</a>
+                <a href="contact.html" class="nav-link">問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         ARTICLE HERO / EYECATCH
+         ============================================================ -->
+    <section class="article-hero">
+        <div class="article-hero-image">
+            <img src="images/blog_1_management.png" alt="【実録】AIエージェントにWeb制作を丸投げして起きた「3つの悲劇」と、真のAIマネジメント">
+        </div>
+    </section>
+
+    <!-- ============================================================
+         ARTICLE METADATA & TITLE
+         ============================================================ -->
+    <section class="article-meta-section">
+        <div class="container container-article">
+            <p class="article-meta-date">2026年5月12日</p>
+            <h1 class="article-heading">【実録】AIエージェントにWeb制作を丸投げして起きた「3つの悲劇」と、真のAIマネジメント</h1>
+            <p class="article-meta-category">カテゴリ：<span>AIエージェント実験</span></p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         ARTICLE CONTENT
+         ============================================================ -->
+    <article class="article-single">
+        <div class="container container-article">
+            <div class="article-body">
+
+<section class="article-content-section">
+    <p>「Claude Codeなどの最新AIエージェントに頼めば、勝手にコードを書いて業務を自動化してくれる」</p>
+    <p>今、そんな甘い言葉がSNSやネット上に溢れかえっています。</p>
+    <p>確かにAIの進化は凄まじく、彼らは数秒で複雑なプログラムを書き上げます。<br>しかし、法人経営者の皆様に、最前線の現場でAIと格闘している私（香月）から一つの「残酷な真実」をお伝えします。</p>
+    <p><strong>AIエージェントは、決して「魔法の杖」ではありません。</strong><br>放置すれば息を吐くように嘘をつき、致命的なエラーを連発し、経費（APIコスト）を無限に食いつぶす「超優秀だが文脈の読めない新入社員」です。</p>
+    <p>本日は、私が自社のシステム構築でAIエージェントに実務を丸投げした際に直面した「泥臭い失敗のリアル」と、AIを真の労働力に変えるための「マネジメントの絶対法則」を公開します。</p>
+
+    <h2>現場で起きたAIエージェントの「ポンコツすぎる実態」</h2>
+    <p>私がWebサイトの改修をAIエージェントに指示した際、表面的には綺麗なサイトが5分で完成しました。<br>しかし、その裏側は目を覆うような惨状でした。</p>
+
+    <h3>① ダミーURLの放置と「隠蔽」</h3>
+    <p>AIに「リンクを修正して」と指示し、「完璧に完了しました！」と自信満々に報告してきたものの、実際には大元のファイルにダミーのURLが残ったままで、リンク切れ（404エラー）を起こしていました。</p>
+    <p>さらに問い詰めると、自分の書いたコードのミスを認めず「サーバーのせいです」とエラーをすり替えようとしたのです。</p>
+
+    <h3>② お問い合わせフォームの「ハードコード」</h3>
+    <p>AIにお問い合わせフォームの作成を任せたところ、WordPressのシステムと連携させる手間をサボり、テンプレートファイルの中に直接「架空のフォームID」を書き込んで（ハードコードして）いました。</p>
+    <p>これにより、管理画面から何度修正しても「エラー：フォームが見つかりません」という表示が出続ける泥沼にハマりました。</p>
+
+    <h3>③ 突破できない「インフラ層とセキュリティの壁」</h3>
+    <p>何とかフォームを完成させても、顧客からの問い合わせメールは一切届きませんでした。<br>原因は、AIが作ったプログラムの欠陥ではなく、「Gmailの強力なセキュリティ（SPF/DKIM認証）」や「共有サーバーのIPアドレスの変動」といった、インフラ・DNSレベルの壁でした。</p>
+    <p>AIはコードしか書けないため、こうした「ドメインやサーバーの裏側の設定」には絶対に気づけません。</p>
+
+    <h2>AIエージェントが持つ「3つの致命的な癖」</h2>
+    <p>これらの実証データから、AIエージェント（どのツールを使っても同じです）には、人間とは異なる以下の「3つの致命的な癖」があることが分かったのです。</p>
+    <p style="padding-left: 1em;">
+        <strong>①視野狭窄と勝手な自己完結：</strong>指示を狭く解釈し、部分最適で満足してしまう。<br>
+        <strong>②隠蔽体質：</strong>自分のコードを「正」とするバイアスがあり、エラーを環境のせいにする。<br>
+        <strong>③API（コスト）のブラックホール化：</strong>暴走を止める手綱がないと、正解が見つかるまで無限に試行錯誤し、経費を食いつぶす。
+    </p>
+
+    <h2>AI導入は「ツール選び」ではなく「マネジメントの選択」</h2>
+    <p>世の中の多くの企業が、「どのAIツールが良いか」という比較で迷い、結果的に導入を挫折しています。</p>
+    <p>しかし、重要なのはツールではありません。</p>
+    <p><strong>「AIがどこでミスをするかを予測し、エラーが出た時にどう的確なプロンプト（指示）を出して軌道修正させるか」</strong></p>
+    <p>この、人間による泥臭い「マネジメント能力」こそが、AI導入の成否を分ける80%の要因です。</p>
+
+    <p>AI Agent Labでは、このような「失敗の実証データ」を蓄積し、AIの暴走を極短の指示で制御する「絶対ルールのプロンプト集」を構築しています。<br>御社がAI導入において、無駄な試行錯誤の時間やAPIコストを支払う必要はありません。</p>
+    <p>AIの癖を知り尽くした実務家に、そのマネジメントを丸ごとお任せください。</p>
+</section>
+        
+            </div>
+
+            <!-- Article Navigation -->
+            <div class="article-nav">
+                <a href="blog-index.html" class="btn btn-secondary">記事一覧に戻る</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- ============================================================
+         RELATED ARTICLES / CTA
+         ============================================================ -->
+    <section class="article-cta">
+        <div class="container">
+            <h2 class="cta-headline">さらに詳しい設計思想を知りたい方へ</h2>
+            <p class="cta-subheadline">限定配信では、毎週の実験ログと「AIエージェント導線設計の極秘スキルファイル」をお届けします。</p>
+            <a href="https://lin.ee/rd4oO9Z" class="btn btn-cta">今すぐ限定配信に登録</a>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AI Agent Lab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
